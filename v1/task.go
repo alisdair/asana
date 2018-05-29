@@ -272,8 +272,8 @@ type TaskRequest struct {
 
 	Notes string `json:"notes,omitempty"`
 
-	Projects   []*NamedAndIDdEntity `json:"projects,omitempty"`
-	ParentTask *Task                `json:"parent,omitempty"`
+	Projects   []int64 `json:"projects,omitempty"`
+	ParentTask *Task   `json:"parent,omitempty"`
 
 	Memberships []*Membership `json:"memberships,omitempty"`
 
